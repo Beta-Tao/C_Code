@@ -1,0 +1,10 @@
+#include <string.h>
+#include "ret_ptr.h"
+
+static const char *msg[] = {"Sunday", "Monday", "Tuesday", 
+                            "Wednesday", "Thursday", "Friday", "Saturday"};
+
+char *get_a_day(int idx)
+{
+    return msg[idx];
+}
