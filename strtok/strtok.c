@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
+//Just want to test Git
 int main(void)
 {
     char str[] = "root:x::0:root:/root:/root:/bin/bash:";
