@@ -16,8 +16,11 @@ int main(void)
 
     while (1)
     {
+        //printf("Hello\n");
         newTime = time(NULL);
+        //printf("newTime: %ld\n", newTime);
         pNewTime = localtime(&newTime);
+        //printf("year: %d\n", pNewTime->tm_year);
         fprintf(fp, "%d-%d-%d %d:%d:%d\n", 
                 pNewTime->tm_year, pNewTime->tm_mon, pNewTime->tm_mday, 
                 pNewTime->tm_hour, pNewTime->tm_min, pNewTime->tm_sec);
